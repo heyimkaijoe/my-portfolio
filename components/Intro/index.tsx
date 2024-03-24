@@ -2,9 +2,7 @@ export default function Intro() {
     return (
         <div className="">
             <h1 className="name">Kevin Hsu</h1>
-            <h2 className="position-title">
-                {/* Software Engineer & Web Developer */}
-            </h2>
+            <h2 className="position-title">Software Engineer & Web Developer</h2>
             <div className="avatar">
                 {/* like Duolingo's */}
             </div>
