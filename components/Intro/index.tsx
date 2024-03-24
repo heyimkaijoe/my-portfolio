@@ -3,9 +3,11 @@ export default function Intro() {
         <div className="">
             <h1 className="name">Kevin Hsu</h1>
             <h2 className="position-title">Software Engineer & Web Developer</h2>
+
             <div className="avatar">
-                {/* like Duolingo's */}
+                <img src="/src/assets/images/avataaars.svg" alt="My Avatar" />
             </div>
+
             <div className="basics">
                 <div className="location">
                     {/* with location icon next to text */}

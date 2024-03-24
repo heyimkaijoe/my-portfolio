@@ -37,3 +37,7 @@
 .position-title {
   @apply text-slate-700;
 }
+
+.avatar {
+  @apply flex justify-around;
+}
