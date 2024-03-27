@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import Hamburger from '../Hamburger'
+import { useState } from 'react';
+import Hamburger from '../Hamburger';
 
 export default function Navbar() {
     const [burgerOpen, setBurgerOpen] = useState(false);

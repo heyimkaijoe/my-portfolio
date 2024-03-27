@@ -31,13 +31,25 @@
 }
 
 .name {
-  @apply mt-32 text-3xl text-slate-900 font-semibold;
+  @apply mt-32 text-3xl text-slate-900 font-bold;
 }
 
 .position-title {
-  @apply text-slate-700;
+  @apply text-slate-700 font-medium;
 }
 
 .avatar {
   @apply flex justify-around;
+}
+
+.basics {
+  @apply list-none mt-4 text-lg font-medium;
+}
+
+.location {
+  @apply flex items-center justify-center;
+}
+
+.languages {
+  @apply mt-4 p-4 mx-4;
 }
