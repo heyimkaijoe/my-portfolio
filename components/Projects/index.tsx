@@ -1,11 +1,11 @@
+import { projects } from '../../data/projects';
+import ProjectCard from '../ProjectCard';
+
 export default function Projects() {
     return (
         <ul className="projects">
-            <li className="project1">
-                {/* TODO: preview and description */}
-            </li>
-            <li className="project2"></li>
-            <li className="project3"></li>
+            {/* TODO: add preview */}
+            <ProjectCard name={projects[0].name} skills={projects[0].skills}/>
         </ul>
     );
 }

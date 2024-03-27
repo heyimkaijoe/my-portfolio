@@ -20,7 +20,6 @@ export default function Intro() {
                 </li>
 
                 <li className="languages">
-                    Languages
                     <ul className="grid grid-cols-2 gap-4 mt-4">
                         <LanguageCard
                             name={languages[0].name}

@@ -9,9 +9,9 @@ export default function Navbar() {
         <nav className="navbar">
             <div className="nav">
                 <ul className={(burgerOpen ? "top-12" : "-top-[120px]") + " nav-list"}>
-                    <li className="about-me">About Me</li>
-                    <li className="projects">Projects</li>
-                    <li className="contacts">Contacts</li>
+                    <li>About Me</li>
+                    <li>Projects</li>
+                    <li>Contacts</li>
                 </ul>
 
                 <button className="hamburger" onClick={toggleBurger}>

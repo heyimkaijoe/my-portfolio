@@ -53,3 +53,11 @@
 .languages {
   @apply mt-4 p-4 mx-4;
 }
+
+.projects {
+  @apply mt-4 mx-8 grid grid-cols-1 text-lg font-semibold;
+}
+
+.card-sm {
+  @apply border-2 rounded-md border-slate-200 px-2 py-1 text-slate-700 text-sm;
+}
