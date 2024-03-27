@@ -33,10 +33,6 @@ export default function Intro() {
                         />
                     </ul>
                 </li>
-
-                <li className="skills">
-                    {/* TODO: skill blocks */}
-                </li>
             </ul>
         </div>
     );
