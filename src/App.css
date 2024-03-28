@@ -4,60 +4,36 @@
   text-align: center;
 }
 
-.navbar {
-  /* @apply; */
+.light-box {
+  @apply border-2 rounded-md text-prheart-400 border-prheart-400 hover:text-prheart-500 hover:border-prheart-500;
 }
 
-.nav {
-  @apply bg-slate-200 w-full;
+.dark-box {
+  @apply border-2 rounded-md text-prheart-500 border-prheart-500 hover:text-prheart-600 hover:border-prheart-600;
 }
 
 .nav-list {
   transition: all .6s linear;
-  @apply absolute left-0 w-full bg-slate-600 -z-10;
+  @apply absolute left-0 w-full bg-prheart-200 font-medium -z-10;
 }
 
 .nav-list li {
-  @apply list-none py-2;
-}
-
-.hamburger {
-  @apply md:hidden ml-2 py-3 size-12 flex flex-col flex-nowrap justify-between;
+  @apply list-none py-2 text-prheart-600;
 }
 
 .slice {
   transition: all .3s ease-in;
-  @apply w-8 h-1 rounded bg-slate-800 origin-center;
+  @apply w-8 h-1 rounded bg-prheart-600 origin-center;
 }
 
-.name {
-  @apply mt-32 text-3xl text-slate-900 font-bold;
-}
-
-.position-title {
-  @apply text-slate-700 font-medium;
-}
-
-.avatar {
-  @apply flex justify-around;
-}
-
-.basics {
-  @apply list-none mt-4 text-lg font-medium;
-}
-
-.location {
-  @apply flex items-center justify-center;
-}
-
-.languages {
-  @apply mt-4 p-4 mx-4;
-}
-
-.projects {
-  @apply mt-4 mx-8 grid grid-cols-1 text-lg font-semibold;
+.title {
+  @apply mt-32 text-3xl text-prheart-950 font-bold;
 }
 
 .card-sm {
-  @apply border-2 rounded-md border-slate-200 px-2 py-1 text-slate-700 text-sm;
+  @apply dark-box px-2 py-1 text-sm;
+}
+
+.input {
+  @apply light-box placeholder:italic placeholder:text-prheart-400 invalid:border-pink-500 invalid:text-pink-600 focus:outline-none bg-transparent px-2 py-1;
 }

@@ -2,7 +2,7 @@ import './App.css'
 import Navbar from '../components/Navbar'
 import Intro from '../components/Intro'
 import Projects from '../components/Projects'
-import Contacts from '../components/Contacts'
+import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 
 export default function App() {
@@ -12,7 +12,7 @@ export default function App() {
             <Navbar />
             <Intro />
             <Projects />
-            <Contacts />
+            <Contact />
             <Footer />
         </>
     );

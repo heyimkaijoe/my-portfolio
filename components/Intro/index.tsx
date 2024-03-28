@@ -5,21 +5,21 @@ import LanguageCard from '../LanguageCard';
 
 export default function Intro() {
     return (
-        <div className="">
-            <h1 className="name">Kevin Hsu</h1>
-            <h2 className="position-title">Software Engineer & Web Developer</h2>
+        <div>
+            <h1 className="title">Kevin Hsu</h1>
+            <h2 className="text-prheart-900 font-medium">Software Engineer & Web Developer</h2>
 
-            <div className="avatar">
+            <div className="flex justify-around">
                 <img src="/src/assets/images/avataaars.svg" alt="My Avatar" />
             </div>
 
-            <ul className="basics">
-                <li className="location">
-                    <FontAwesomeIcon icon={faLocationDot} size="lg" className="mr-2 text-red-600" />
-                    {loc}
+            <ul className="list-none mt-4 text-lg font-medium">
+                <li className="group/loc flex items-center justify-center">
+                    <FontAwesomeIcon icon={faLocationDot} size="lg" className="mr-2 text-red-500 group-hover/loc:text-red-600" />
+                    <span className="text-prheart-600 group-hover/loc:text-prheart-700">{loc}</span>
                 </li>
 
-                <li className="languages">
+                <li className="mt-4 p-4 mx-4">
                     <ul className="grid grid-cols-2 gap-4 mt-4">
                         <LanguageCard
                             name={languages[0].name}

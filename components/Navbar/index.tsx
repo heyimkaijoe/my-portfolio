@@ -6,15 +6,15 @@ export default function Navbar() {
     const toggleBurger = () => setBurgerOpen(!burgerOpen);
 
     return (
-        <nav className="navbar">
-            <div className="nav">
+        <nav>
+            <div className="bg-prheart-200 w-full">
                 <ul className={(burgerOpen ? "top-12" : "-top-[120px]") + " nav-list"}>
                     <li>About Me</li>
                     <li>Projects</li>
                     <li>Contacts</li>
                 </ul>
 
-                <button className="hamburger" onClick={toggleBurger}>
+                <button className="md:hidden ml-2 py-3 size-12 flex flex-col flex-nowrap justify-between" onClick={toggleBurger}>
                     <Hamburger isOpen={burgerOpen} />
                 </button>
             </div>
