@@ -14,7 +14,7 @@
 
 .nav-list {
   transition: all .6s linear;
-  @apply absolute left-0 w-full bg-prheart-200 font-medium -z-10;
+  @apply md:hidden absolute left-0 w-full bg-prheart-200 font-medium;
 }
 
 .nav-list li {
@@ -36,4 +36,8 @@
 
 .input {
   @apply light-box placeholder:italic placeholder:text-prheart-400 invalid:border-pink-500 invalid:text-pink-600 focus:outline-none bg-transparent px-2 py-1;
+}
+
+.link {
+  @apply block text-lg text-prheart-600 hover:text-prheart-700 py-1;
 }

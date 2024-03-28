@@ -1,7 +1,7 @@
 export default function Contact() {
     return (
         // TODO: ajax setup
-        <div className="mx-4">
+        <div id="contact" className="mx-4">
             <h1 className="title mb-6">Contact</h1>
             <form action={import.meta.env.VITE_GETFORM_URL} method="POST" className="flex flex-col gap-2">
                 <input type="text" name="name" placeholder="Name" className="input" />

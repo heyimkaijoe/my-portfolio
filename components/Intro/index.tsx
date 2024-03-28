@@ -6,7 +6,7 @@ import LanguageCard from '../LanguageCard';
 export default function Intro() {
     return (
         <div>
-            <h1 className="title">Kevin Hsu</h1>
+            <h1 id="about-me" className="title">Kevin Hsu</h1>
             <h2 className="text-prheart-900 font-medium">Software Engineer & Web Developer</h2>
 
             <div className="flex justify-around">
