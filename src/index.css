@@ -7,5 +7,5 @@
   line-height: 1.5;
   font-weight: 400;
   
-  @apply bg-prheart-50;
+  @apply bg-prheart-50 dark:bg-prheart-950;
 }

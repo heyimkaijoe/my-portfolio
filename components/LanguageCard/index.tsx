@@ -9,8 +9,8 @@ export default function LanguageCard({ name, proficiency, toeic }: {
     return (
         <li>
             <div className="group/lang">
-                <FontAwesomeIcon icon={faCheck} size="xl" className="mr-2 text-green-500 group-hover/lang:text-green-600" />
-                <span className="text-prheart-900 group-hover/lang:text-prheart-950">{name}</span>
+                <FontAwesomeIcon icon={faCheck} size="xl" className="mr-2 text-green-500 dark:text-green-600 group-hover/lang:text-green-600" />
+                <span className="text-prheart-900 dark:text-prheart-100 group-hover/lang:text-prheart-950">{name}</span>
             </div>
 
             <ul>

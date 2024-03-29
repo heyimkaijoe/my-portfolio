@@ -7,7 +7,7 @@ export default function Intro() {
     return (
         <div>
             <h1 id="about-me" className="title">Kevin Hsu</h1>
-            <h2 className="text-prheart-900 font-medium">Software Engineer & Web Developer</h2>
+            <h2 className="text-prheart-900 dark:text-prheart-100 font-medium">Software Engineer & Web Developer</h2>
 
             <div className="flex justify-around">
                 <img src="/src/assets/images/avataaars.svg" alt="My Avatar" />
@@ -15,8 +15,8 @@ export default function Intro() {
 
             <ul className="list-none mt-4 text-lg font-medium">
                 <li className="group/loc flex items-center justify-center">
-                    <FontAwesomeIcon icon={faLocationDot} size="lg" className="mr-2 text-red-500 group-hover/loc:text-red-600" />
-                    <span className="text-prheart-600 group-hover/loc:text-prheart-700">{loc}</span>
+                    <FontAwesomeIcon icon={faLocationDot} size="lg" className="mr-2 text-red-500 dark:text-red-600 group-hover/loc:text-red-600" />
+                    <span className="text-prheart-900 dark:text-prheart-100 group-hover/loc:text-prheart-950">{loc}</span>
                 </li>
 
                 <li className="mt-4 p-4 mx-4">
