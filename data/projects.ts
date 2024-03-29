@@ -5,7 +5,11 @@ interface ProjectProp {
 
 export const projects: ReadonlyArray<ProjectProp> = [
     {
+        name: "My Portfolio",
+        skills: ["React", "TypeScript", "CloudFront"],
+    },
+    {
         name: "React Reversi",
-        skills: ["React", "Tailwind", "S3"],
+        skills: ["React", "Tailwind CSS", "S3"],
     },
 ];
