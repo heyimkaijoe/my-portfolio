@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import Hamburger from '../Hamburger';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
+import { faSun, faMoon, faUser, faFlaskVial, faHandshake } from '@fortawesome/free-solid-svg-icons';
 
 export default function Navbar() {
     const [burgerOpen, setBurgerOpen] = useState(false);
@@ -22,10 +22,21 @@ export default function Navbar() {
     return (
         <nav className="px-4 bg-prheart-200 w-full flex justify-between">
             <div>
-                <ul className={(burgerOpen ? "top-12" : "-top-[120px]") + " nav-list"}>
-                    <a href="#about-me" className="link">About Me</a>
-                    <a href="#projects" className="link">Projects</a>
-                    <a href="#contact" className="link">Contacts</a>
+                <ul className={(burgerOpen ? "top-12" : "-top-[120px]") + " nav-list"} onClick={toggleBurger}>
+                    <a href="#about-me" className="link">
+                        <FontAwesomeIcon icon={faUser} />
+                        About Me
+                    </a>
+
+                    <a href="#projects" className="link">
+                        <FontAwesomeIcon icon={faFlaskVial} />
+                        Projects
+                    </a>
+
+                    <a href="#contact" className="link">
+                        <FontAwesomeIcon icon={faHandshake} />
+                        Contacts
+                    </a>
                 </ul>
 
                 <button className="md:hidden py-3 size-12 flex flex-col flex-nowrap justify-between" onClick={toggleBurger}>

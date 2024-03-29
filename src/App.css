@@ -13,7 +13,7 @@
 }
 
 .nav-list {
-  transition: all .6s linear;
+  transition: all .5s linear;
   @apply md:hidden absolute left-0 w-full bg-prheart-200 font-medium;
 }
 
@@ -39,5 +39,5 @@
 }
 
 .link {
-  @apply block text-lg text-prheart-600 hover:text-prheart-700 py-1;
+  @apply block text-lg text-prheart-600 hover:text-prheart-700 py-1 flex justify-center items-center gap-2;
 }
