@@ -5,20 +5,20 @@
 }
 
 .light-box {
-  @apply border-2 rounded-md text-prheart-400 dark:text-prheart-300 border-prheart-400 dark:border-prheart-300 hover:text-prheart-500 hover:border-prheart-500;
+  @apply border-2 rounded-md text-prheart-400 dark:text-prheart-300 border-prheart-400 dark:border-prheart-300;
 }
 
 .dark-box {
-  @apply border-2 rounded-md text-prheart-500 dark:text-prheart-100 border-prheart-500 dark:border-prheart-100 hover:text-prheart-600 hover:border-prheart-600;
+  @apply border-2 rounded-md text-prheart-500 dark:text-prheart-100 border-prheart-500 dark:border-prheart-100;
 }
 
 .nav-list {
   transition: all .5s linear;
-  @apply md:hidden absolute left-0 w-full bg-prheart-200 dark:bg-prheart-700 font-medium;
+  @apply absolute md:fixed left-0 w-full bg-prheart-200 dark:bg-prheart-700 font-medium md:flex md:gap-6 md:px-4;
 }
 
 .nav-list li {
-  @apply list-none text-prheart-600 dark:text-prheart-300;
+  @apply list-none text-prheart-600 dark:text-prheart-300 dark:hover:text-prheart-200 hover:text-prheart-700 hover:font-semibold;
 }
 
 .slice {
@@ -27,17 +27,21 @@
 }
 
 .title {
-  @apply mt-32 text-3xl text-prheart-950 dark:text-prheart-50 font-bold;
+  @apply pt-24 md:pt-48 md:mb-2 text-3xl md:text-6xl text-prheart-950 dark:text-prheart-50 font-bold;
 }
 
 .card-sm {
-  @apply dark-box px-2 py-1 text-sm font-semibold;
+  @apply dark-box px-2 py-1 text-sm md:text-lg font-semibold;
 }
 
 .input {
-  @apply light-box placeholder:italic placeholder:text-prheart-400 dark:placeholder:text-prheart-200 invalid:border-pink-500 invalid:text-pink-600 focus:outline-none bg-transparent px-2 py-1;
+  @apply light-box placeholder:italic placeholder:text-prheart-400 dark:placeholder:text-prheart-200 invalid:border-pink-500 invalid:text-pink-600 focus:outline-none bg-transparent px-2 py-1 md:py-2;
 }
 
 .link {
-  @apply block text-lg py-2 flex justify-center items-center gap-2;
+  @apply block text-lg py-[10px] flex justify-center items-center gap-2;
+}
+
+.submit-btn {
+  @apply light-box text-prheart-400 dark:text-prheart-100 dark:hover:text-prheart-950 dark:hover:bg-prheart-300 hover:text-prheart-50 hover:bg-prheart-400 self-start px-6 py-3 mt-2 font-semibold;
 }

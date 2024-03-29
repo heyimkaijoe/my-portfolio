@@ -20,27 +20,27 @@ export default function Navbar() {
     }, [theme]);
 
     return (
-        <nav className="px-4 bg-prheart-200 dark:bg-prheart-700 w-full flex justify-between">
+        <nav className="md:fixed md:top-0 px-4 bg-prheart-200 dark:bg-prheart-700 w-full flex justify-between items-center drop-shadow">
             <div>
-                <ul className={(burgerOpen ? "top-12" : "-top-[132px]") + " nav-list"} onClick={toggleBurger}>
-                    <li className="">
+                <ul className={(burgerOpen ? "top-12 md:top-0" : "-top-36 md:top-0") + " nav-list"} onClick={toggleBurger}>
+                    <li>
                         <a href="#about-me" className="link">
                             <FontAwesomeIcon icon={faUser} />
                             About Me
                         </a>
                     </li>
                     
-                    <li className="">
+                    <li>
                         <a href="#projects" className="link">
                             <FontAwesomeIcon icon={faFlaskVial} />
                             Projects
                         </a>
                     </li>
 
-                    <li className="">
+                    <li>
                         <a href="#contact" className="link">
                             <FontAwesomeIcon icon={faHandshake} />
-                            Contacts
+                            Contact
                         </a>
                     </li>
                 </ul>
@@ -50,13 +50,9 @@ export default function Navbar() {
                 </button>
             </div>
             
-            <div className="flex items-center z-10">
-                <div className="translate"></div>
-
-                <button onClick={handleThemeToggle}>
-                    <FontAwesomeIcon icon={isDarkTheme ? faMoon : faSun} size="2xl" className="text-prheart-600 dark:text-prheart-300" />
-                </button>
-            </div>
+            <button onClick={handleThemeToggle} className="z-10 w-8 md:w-[44px] flex justify-center md:py-2 md:px-3">
+                <FontAwesomeIcon icon={isDarkTheme ? faMoon : faSun} size="2xl" className="text-prheart-600 dark:text-prheart-300 dark:hover:text-prheart-200 hover:text-prheart-700" />
+            </button>
         </nav>
     );
 }

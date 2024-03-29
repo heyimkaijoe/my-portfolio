@@ -7,20 +7,20 @@ export default function Intro() {
     return (
         <div>
             <h1 id="about-me" className="title">Kevin Hsu</h1>
-            <h2 className="text-prheart-900 dark:text-prheart-100 font-medium">Software Engineer & Web Developer</h2>
+            <h2 className="md:text-2xl text-prheart-900 dark:text-prheart-100 font-medium">Software Engineer & Web Developer</h2>
 
             <div className="flex justify-around">
                 <img src="/src/assets/images/avataaars.svg" alt="My Avatar" />
             </div>
 
             <ul className="list-none mt-4 text-lg font-medium">
-                <li className="group/loc flex items-center justify-center">
-                    <FontAwesomeIcon icon={faLocationDot} size="lg" className="mr-2 text-red-500 dark:text-red-600 group-hover/loc:text-red-600" />
-                    <span className="text-prheart-900 dark:text-prheart-100 group-hover/loc:text-prheart-950">{loc}</span>
+                <li className="flex items-center justify-center">
+                    <FontAwesomeIcon icon={faLocationDot} size="lg" className="mr-2 text-red-500 dark:text-red-600" />
+                    <span className="md:text-2xl text-prheart-900 dark:text-prheart-100">{loc}</span>
                 </li>
 
-                <li className="mt-4 p-4 mx-4">
-                    <ul className="grid grid-cols-2 gap-4 mt-4">
+                <li className="mt-4 md:mt-8 p-4 md:p-8 mx-4 md:mx-8">
+                    <ul className="grid grid-cols-2 gap-4 md:gap-8 mt-4">
                         <LanguageCard
                             name={languages[0].name}
                             proficiency={languages[0].proficiency}
