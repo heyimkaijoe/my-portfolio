@@ -9,7 +9,7 @@
 }
 
 .dark-box {
-  @apply border-2 rounded-md text-prheart-500 dark:text-prheart-200 border-prheart-500 dark:border-prheart-200 hover:text-prheart-600 hover:border-prheart-600;
+  @apply border-2 rounded-md text-prheart-500 dark:text-prheart-100 border-prheart-500 dark:border-prheart-100 hover:text-prheart-600 hover:border-prheart-600;
 }
 
 .nav-list {
@@ -31,7 +31,7 @@
 }
 
 .card-sm {
-  @apply dark-box px-2 py-1 text-sm;
+  @apply dark-box px-2 py-1 text-sm font-semibold;
 }
 
 .input {

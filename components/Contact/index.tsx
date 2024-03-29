@@ -7,7 +7,7 @@ export default function Contact() {
                 <input type="text" name="name" placeholder="Name" className="input" />
                 <input type="email" name="email" placeholder="Email" className="input" />
                 <textarea name="message" placeholder="Message" rows={8} className="input" />
-                <button type="submit" className="light-box text-prheart-400 dark:text-prheart-200 self-start px-6 py-3 mt-2 font-semibold">Work With Me</button>
+                <button type="submit" className="light-box text-prheart-400 dark:text-prheart-100 self-start px-6 py-3 mt-2 font-semibold">Work With Me</button>
             </form>
         </div>
     );
