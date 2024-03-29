@@ -18,7 +18,7 @@
 }
 
 .nav-list li {
-  @apply list-none text-prheart-600 dark:text-prheart-300 dark:hover:text-prheart-200 hover:text-prheart-700 hover:font-semibold;
+  @apply list-none text-prheart-600 dark:text-prheart-300 dark:hover:text-prheart-200 hover:text-prheart-700;
 }
 
 .slice {
@@ -27,7 +27,7 @@
 }
 
 .title {
-  @apply pt-24 md:pt-48 md:mb-2 text-3xl md:text-6xl text-prheart-950 dark:text-prheart-50 font-bold;
+  @apply pt-16 md:pt-24 md:mb-2 text-3xl md:text-6xl text-prheart-950 dark:text-prheart-50 font-bold;
 }
 
 .card-sm {
