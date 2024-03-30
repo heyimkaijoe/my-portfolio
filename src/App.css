@@ -1,5 +1,4 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
   text-align: center;
 }
@@ -48,4 +47,8 @@
 
 .theme-icon {
   @apply text-prheart-600 dark:text-prheart-300 dark:group-hover/theme:text-prheart-200 group-hover/theme:text-prheart-800;
+}
+
+.social-link {
+  @apply block size-6 dark:hover:text-prheart-50 hover:text-prheart-950;
 }
