@@ -18,7 +18,7 @@
 }
 
 .nav-list li {
-  @apply list-none text-prheart-600 dark:text-prheart-300 dark:hover:text-prheart-200 hover:text-prheart-700;
+  @apply list-none text-prheart-600 dark:text-prheart-300 dark:hover:text-prheart-200 hover:text-prheart-800;
 }
 
 .slice {
@@ -44,4 +44,8 @@
 
 .submit-btn {
   @apply light-box text-prheart-400 dark:text-prheart-100 dark:hover:text-prheart-950 dark:hover:bg-prheart-300 hover:text-prheart-50 hover:bg-prheart-400 self-start px-6 py-3 mt-2 font-semibold;
+}
+
+.theme-icon {
+  @apply text-prheart-600 dark:text-prheart-300 dark:group-hover/theme:text-prheart-200 group-hover/theme:text-prheart-800;
 }

@@ -50,8 +50,8 @@ export default function Navbar() {
                 </button>
             </div>
             
-            <button onClick={handleThemeToggle} className="z-10 w-8 md:w-[44px] flex justify-center md:py-2 md:px-3">
-                <FontAwesomeIcon icon={isDarkTheme ? faMoon : faSun} size="2xl" className="text-prheart-600 dark:text-prheart-300 dark:hover:text-prheart-200 hover:text-prheart-700" />
+            <button onClick={handleThemeToggle} className="group/theme z-10 w-8 md:w-12 flex justify-center md:py-2 md:px-3">
+                <FontAwesomeIcon icon={isDarkTheme ? faMoon : faSun} size="2xl" className="theme-icon" />
             </button>
         </nav>
     );
