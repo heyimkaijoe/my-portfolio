@@ -14,9 +14,9 @@ export default function LanguageCard({ name, proficiency, toeic }: {
             </div>
 
             <ul>
-                <li className="my-2 md:my-4 card-sm">{proficiency}</li>
+                <li className="my-2 md:my-6 card-sm">{proficiency}</li>
                 {toeic && 
-                <li className="my-2 md:my-4 card-sm">TOEIC: {toeic}</li>}
+                <li className="my-2 md:my-6 card-sm">TOEIC: {toeic}</li>}
             </ul>
         </li>
     );

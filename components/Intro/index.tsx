@@ -19,7 +19,7 @@ export default function Intro() {
                     <span className="md:text-2xl text-prheart-900 dark:text-prheart-100">{loc}</span>
                 </li>
 
-                <li className="mt-4 p-4 md:p-8 mx-4 md:mx-8">
+                <li className="mt-4 p-4 md:p-12 mx-4 md:mx-12">
                     <ul className="grid grid-cols-2 gap-4 md:gap-8 mt-4">
                         <LanguageCard
                             name={languages[0].name}

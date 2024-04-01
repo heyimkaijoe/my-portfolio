@@ -1,6 +1,6 @@
 export default function Contact() {
     return (
-        <div id="contact" className="mx-4 md:mx-12">
+        <div id="contact" className="mx-4 md:mx-32">
             <h1 className="title mb-6">Contact</h1>
             <form action={import.meta.env.VITE_GETFORM_URL} method="POST" className="flex flex-col gap-2 md:gap-4">
                 <input type="text" name="name" placeholder="Name" className="input" />
