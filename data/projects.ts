@@ -2,7 +2,7 @@ interface ProjectProp {
     name: string;
     skills: Array<string>;
     imgUrl: string;
-    link?: string;
+    link: string;
 };
 
 export const projects: ReadonlyArray<ProjectProp> = [
@@ -10,6 +10,7 @@ export const projects: ReadonlyArray<ProjectProp> = [
         name: "My Portfolio",
         skills: ["React", "TypeScript", "CloudFront"],
         imgUrl: "/src/assets/images/projects/my-portfolio.png",
+        link: "https://kchsu.com/",
     },
     {
         name: "React Reversi",

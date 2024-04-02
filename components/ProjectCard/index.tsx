@@ -2,7 +2,7 @@ export default function ProjectCard({ name, skills, imgUrl, link }: {
     name: string,
     skills: Array<string>,
     imgUrl: string,
-    link?: string,
+    link: string,
 }) {
     return (
         <li className="dark-box">

@@ -8,6 +8,7 @@ export default function Projects() {
                 name={projects[0].name}
                 skills={projects[0].skills}
                 imgUrl={projects[0].imgUrl}
+                link={projects[0].link}
             />
             <ProjectCard
                 name={projects[1].name}
