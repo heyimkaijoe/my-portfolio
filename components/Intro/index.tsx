@@ -10,7 +10,7 @@ export default function Intro() {
             <h2 className="md:text-2xl text-prheart-900 dark:text-prheart-100 font-medium">Software Engineer & Web Developer</h2>
 
             <div className="flex justify-around">
-                <img src="/src/assets/images/avataaars.svg" alt="My Avatar" />
+                <img src="/images/avataaars.svg" alt="My Avatar" />
             </div>
 
             <ul className="list-none mt-4 text-lg font-medium">
