@@ -4,6 +4,27 @@ import { loc, languages } from '../../data/basics';
 import LanguageCard from '../LanguageCard';
 
 export default function Intro() {
+    const languageCards = languages.map((language) => {
+        const { name, proficiency, cert } = language;
+
+        if (typeof cert === "undefined") {
+            return (
+                <LanguageCard
+                    name={name}
+                    proficiency={proficiency}
+                />
+            );
+        } else {
+            return (
+                <LanguageCard
+                    name={name}
+                    proficiency={proficiency}
+                    toeic={cert.toeic}
+                />
+            );
+        };
+    });
+    
     return (
         <div>
             <h1 id="about-me" className="title">Kevin Hsu</h1>
@@ -21,15 +42,7 @@ export default function Intro() {
 
                 <li className="mt-4 p-4 md:p-12 mx-4 md:mx-12">
                     <ul className="grid grid-cols-2 gap-4 md:gap-8 mt-4">
-                        <LanguageCard
-                            name={languages[0].name}
-                            proficiency={languages[0].proficiency}
-                            toeic={languages[0].cert!.toeic}
-                        />
-                        <LanguageCard
-                            name={languages[1].name}
-                            proficiency={languages[1].proficiency}
-                        />
+                        {languageCards}
                     </ul>
                 </li>
             </ul>

@@ -18,4 +18,5 @@ export const projects: ReadonlyArray<ProjectProp> = [
         imgUrl: "/images/projects/react-reversi.png",
         link: "http://reversibykchsu.com/",
     },
+    /* TODO: add my third project here */
 ];
