@@ -10,6 +10,7 @@ export default function Intro() {
         if (typeof cert === "undefined") {
             return (
                 <LanguageCard
+                    key={name}
                     name={name}
                     proficiency={proficiency}
                 />
@@ -17,6 +18,7 @@ export default function Intro() {
         } else {
             return (
                 <LanguageCard
+                    key={name}
                     name={name}
                     proficiency={proficiency}
                     toeic={cert.toeic}
@@ -24,7 +26,7 @@ export default function Intro() {
             );
         };
     });
-    
+
     return (
         <div>
             <h1 id="about-me" className="title">Kevin Hsu</h1>

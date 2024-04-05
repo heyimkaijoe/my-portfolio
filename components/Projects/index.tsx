@@ -7,6 +7,7 @@ export default function Projects() {
 
         return (
             <ProjectCard
+                key={name}
                 name={name}
                 skills={skills}
                 imgUrl={imgUrl}
