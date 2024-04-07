@@ -51,3 +51,7 @@
 .social-link {
   @apply block size-6 dark:hover:text-prheart-50 hover:text-prheart-950;
 }
+
+.projects {
+  @apply max-w-md md:max-w-screen-xl mx-auto pt-4 md:pt-16 px-8 md:px-24 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 text-lg font-semibold;
+}
