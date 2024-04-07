@@ -29,7 +29,7 @@
 }
 
 .card-sm {
-  @apply dark-box px-2 py-1 text-sm md:text-lg font-semibold;
+  @apply dark-box px-2 py-1 text-sm md:text-lg font-semibold flex justify-center items-center;
 }
 
 .input {

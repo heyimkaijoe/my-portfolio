@@ -11,6 +11,7 @@ export default function App() {
         <>
             <Navbar />
             <Intro />
+            {/* TODO: prob. put Projects component higher? */}
             <Projects />
             <Contact />
             <Footer />

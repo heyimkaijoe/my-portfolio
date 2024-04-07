@@ -36,13 +36,13 @@ export default function Intro() {
                 <img src="/images/avataaars.svg" alt="My Avatar" />
             </div>
 
-            <ul className="list-none mt-4 text-lg font-medium">
+            <ul className="list-none mt-4 text-lg md:text-2xl font-medium">
                 <li className="flex items-center justify-center">
                     <FontAwesomeIcon icon={faLocationDot} size="lg" className="mr-2 text-red-500 dark:text-red-600" />
                     <span className="md:text-2xl text-prheart-900 dark:text-prheart-100">{loc}</span>
                 </li>
 
-                <li className="mt-4 p-4 md:p-12 mx-4 md:mx-12">
+                <li className="mt-4 p-4 md:p-16 mx-4 md:mx-16">
                     <ul className="grid grid-cols-2 gap-4 md:gap-8 mt-4">
                         {languageCards}
                     </ul>
