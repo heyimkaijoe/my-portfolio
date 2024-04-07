@@ -25,7 +25,7 @@
 }
 
 .title {
-  @apply pt-16 md:pt-24 md:mb-2 text-3xl md:text-6xl text-prheart-950 dark:text-prheart-50 font-bold;
+  @apply pt-16 md:pt-24 md:mb-8 text-3xl md:text-6xl text-prheart-950 dark:text-prheart-50 font-bold;
 }
 
 .card-sm {

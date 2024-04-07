@@ -26,7 +26,7 @@ export default function Languages() {
     });
 
     return (
-        <div className="mt-4 p-4 md:p-16 mx-4 md:mx-16">
+        <div className="max-w-md md:max-w-screen-xl p-8 md:p-24 mx-auto">
             <ul className="grid grid-cols-2 gap-4 md:gap-8 mt-4">
                 {languageCards}
             </ul>
