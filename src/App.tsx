@@ -4,6 +4,7 @@ import Intro from '../components/Intro';
 import Projects from '../components/Projects';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+import Languages from '../components/Languages';
 
 export default function App() {
 
@@ -11,8 +12,8 @@ export default function App() {
         <>
             <Navbar />
             <Intro />
-            {/* TODO: prob. put Projects component higher? */}
             <Projects />
+            <Languages />
             <Contact />
             <Footer />
         </>
