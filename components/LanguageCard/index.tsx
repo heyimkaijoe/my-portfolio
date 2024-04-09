@@ -10,7 +10,7 @@ export default function LanguageCard({ name, proficiency, toeic }: {
         <li>
             <div className="flex justify-center items-center">
                 <FontAwesomeIcon icon={faCheck} size="xl" className="mr-2 text-green-500 dark:text-green-600" />
-                <h2 className="subtitle">{name}</h2>
+                <h2 className="subtitle font-semibold">{name}</h2>
             </div>
 
             <ul>

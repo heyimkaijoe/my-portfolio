@@ -8,7 +8,7 @@ export default function GitHub({ isDarkTheme }: { isDarkTheme: boolean }) {
 
     return (
         <div className={"flex flex-col items-center " + (isDarkTheme ? "text-prheart-100" : "text-prheart-900")}>
-            <h2 className="subtitle mt-4 mb-8">Days I Code</h2>
+            <h2 className="subtitle mt-4 mb-8 font-semibold">Days I Code</h2>
             <GitHubCalendar
                 username="heyimkaijoe"
                 theme={theme}

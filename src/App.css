@@ -29,7 +29,7 @@
 }
 
 .subtitle {
-  @apply md:text-2xl text-prheart-900 dark:text-prheart-100 font-medium;
+  @apply text-lg md:text-2xl text-prheart-900 dark:text-prheart-100 font-medium;
 }
 
 .card-sm {
