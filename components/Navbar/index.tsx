@@ -1,23 +1,11 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Hamburger from '../Hamburger';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSun, faMoon, faUser, faFlaskVial, faHandshake } from '@fortawesome/free-solid-svg-icons';
 
-export default function Navbar() {
+export default function Navbar({ isDarkTheme, handleThemeToggle }: { isDarkTheme: boolean, handleThemeToggle: () => void }) {
     const [burgerOpen, setBurgerOpen] = useState(false);
     const toggleBurger = () => setBurgerOpen(!burgerOpen);
-
-    type Theme = null | "dark" | "light";
-    const [theme, setTheme] = useState<Theme>(null);
-    const isDarkTheme = theme === "dark";
-    const handleThemeToggle = () => setTheme(isDarkTheme ? "light" : "dark");
-
-    useEffect(() => {
-        window.matchMedia("(prefers-color-scheme: dark)").matches ? setTheme("dark") : setTheme("light");
-    }, []);
-    useEffect(() => {
-        isDarkTheme ? document.documentElement.classList.add("dark") : document.documentElement.classList.remove("dark");
-    }, [theme]);
 
     return (
         <nav className="md:fixed md:top-0 px-4 bg-prheart-200 dark:bg-prheart-700 w-full flex justify-between items-center drop-shadow">
