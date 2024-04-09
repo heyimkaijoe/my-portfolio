@@ -2,8 +2,8 @@ import GitHubCalendar, { ThemeInput } from 'react-github-calendar';
 
 export default function GitHub({ isDarkTheme }: { isDarkTheme: boolean }) {
     const theme: ThemeInput = {
-        light: ["#2c0076", "#7916ff", "#9f75ff", "#bea6ff", "#d9ceff"],
-        dark: ["#f3f1ff", "#bea6ff", "#843dff", "#6b04fd", "#5a03d5"],
+        light: ["#d9ceff", "#9f75ff", "#7916ff", "#6b04fd", "#4b05ad"],
+        dark: ["#4b05ad", "#843dff", "#9f75ff", "#bea6ff", "#d9ceff"],
     };
 
     return (
