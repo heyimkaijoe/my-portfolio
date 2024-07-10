@@ -8,7 +8,7 @@ export default function Navbar({ isDarkTheme, handleThemeToggle }: { isDarkTheme
     const toggleBurger = () => setBurgerOpen(!burgerOpen);
 
     return (
-        <nav className="md:fixed md:top-0 px-4 bg-prheart-200 dark:bg-prheart-700 w-full flex justify-between items-center">
+        <nav className="md:fixed md:top-0 px-4 bg-prheart-200 dark:bg-prheart-700 w-full flex justify-between items-center md:drop-shadow">
             <div>
                 <ul className={(burgerOpen ? "top-12 md:top-0" : "-top-36 md:top-0") + " nav-list"} onClick={toggleBurger}>
                     <li>

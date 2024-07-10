@@ -3,7 +3,7 @@ interface ProjectProp {
     skills: Array<string>;
     imgUrl: string;
     link: string;
-};
+}
 
 export const projects: ReadonlyArray<ProjectProp> = [
     {
@@ -18,5 +18,10 @@ export const projects: ReadonlyArray<ProjectProp> = [
         imgUrl: "/images/projects/react-reversi.png",
         link: "http://reversibykchsu.com/",
     },
-    /* TODO: add my third project here */
+    {
+        name: "Boooze",
+        skills: ["Rails", "Docker", "Kamal", "EC2"],
+        imgUrl: "/images/projects/boooze.png",
+        link: "https://boooze.biz/",
+    },
 ];
