@@ -7,7 +7,8 @@ interface LanguageProp {
     cert?: {
         toeic: string;
     };
-};
+}
+
 const languages: ReadonlyArray<LanguageProp> = [
     {
         name: "English",
